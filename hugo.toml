@@ -1,0 +1,48 @@
+baseURL = 'https://jfrondeau.fr/'
+languageCode = 'en-us'
+title = 'Jean-François Rondeau'
+theme = 'PaperMod'
+[params]
+    defaultTheme = "dark"  # Active le thème sombre par défaut
+    # Activez l'affichage de l'en-tête avec photo et réseaux sociaux
+    profileMode = { enabled = true, title = "Dr.Jean-François Rondeau", subtitle = "Innovation & Technology Director | International R&D", imageUrl = "pictures/Avatar_JFR.png", imageTitle = "Dr.Jeff", imageWidth = 120, imageHeight = 120 }
+
+    [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/jean-francois-rondeau"
+
+    [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/rondeaujf"
+
+    [[params.socialIcons]]
+    name = "email"
+    url = "mailto:contact@jfrondeau.fr"
+
+    [[params.socialIcons]]
+    name = "wechat"
+    url = "https://u.wechat.com/JeffR-B"
+
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 4

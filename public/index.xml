@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Welcome on Jean-François Rondeau</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Welcome on Jean-François Rondeau</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h1&gt;
+&lt;p&gt;Feel free to reach out via the form below or connect with me on social media.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;contact-form&#34;&gt;Contact Form&lt;/h3&gt;
+
+&lt;form action=&#34;https://formspree.io/f/xkgdkzjw&#34; method=&#34;POST&#34;&gt;
+  &lt;div&gt;
+    &lt;label for=&#34;name&#34;&gt;Name:&lt;/label&gt;
+    &lt;input type=&#34;text&#34; id=&#34;name&#34; name=&#34;name&#34; required&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&#34;email&#34;&gt;Email:&lt;/label&gt;
+    &lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;email&#34; required&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&#34;message&#34;&gt;Message:&lt;/label&gt;
+    &lt;textarea id=&#34;message&#34; name=&#34;message&#34; rows=&#34;5&#34; required&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;hr&gt;
+&lt;h3 id=&#34;social-media&#34;&gt;Social Media&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;: &lt;a href=&#34;https://linkedin.com/in/jean-francois-rondeau&#34;&gt;Jean-François Rondeau&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a href=&#34;mailto:contact@jfrondeau.fr&#34;&gt;contact@jfrondeau.fr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Patents</title>
+      <link>http://localhost:1313/posts/patents/</link>
+      <pubDate>Tue, 09 Dec 2025 12:47:43 +0000</pubDate>
+      <guid>http://localhost:1313/posts/patents/</guid>
+      <description>&lt;h1 id=&#34;patent-portfolio-jean-françois-rondeau&#34;&gt;Patent Portfolio: Jean-François Rondeau&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Professional Focus:&lt;/strong&gt; Automotive Acoustics, Noise Vibration &amp;amp; Harshness (NVH), Audio Systems, and Material Engineering.&lt;br&gt;
+&lt;strong&gt;Primary Assignee:&lt;/strong&gt; Faurecia (Faurecia Clarion Electronics Europe, Faurecia Automotive Industrie).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-summary-of-patents--applications&#34;&gt;📌 Summary of Patents &amp;amp; Applications&lt;/h2&gt;
+&lt;p&gt;The following list includes published patent applications and granted patents where Jean-François Rondeau is listed as an inventor.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Patent Title&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Patent / Publication Number&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Filing / Publication Date&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Assignee&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Co-Inventors&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Audio method and system for a seat headrest&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;US 12,317,060&lt;/strong&gt; (Grant*) &lt;!-- raw HTML omitted --&gt; &lt;em&gt;Also published as US2022/0329949&lt;/em&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Filed: Dec 22, 2020&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Faurecia Clarion Electronics Europe&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Christophe Mattei, Nicolas Pignier&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Method to produce a surface covering&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;US 2014/0339725 A1&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Pub: Nov 20, 2014&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Faurecia Interieur&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Philippe-Jean Marcq&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Soundproofing structure&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;EP 1 474 314 B1&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt; &lt;em&gt;Also published as FR2839294&lt;/em&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Grant: Sep 7, 2010 &lt;!-- raw HTML omitted --&gt; Filed: Apr 17, 2004&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Faurecia Automotive Industrie&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Arnaud Duval, Valérie Marcel, Patrice Charbonnier&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Process for manufacturing a structure of equipment&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;FR 2 925 388&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Filed: Dec 20, 2007&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Faurecia Interieur&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Didier Liaud, Philippe Marcq, Valérie Marcel&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;*Note: Recent search data suggests a grant date scheduled or listed for 2025 in some databases; the application was filed in 2020.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;driving-technological-advancement-on-a-global-stage&#34;&gt;&lt;strong&gt;Driving Technological Advancement on a Global Stage&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Bridging the gap between science and market&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-expertise--interests&#34;&gt;&lt;strong&gt;🔍 Expertise &amp;amp; Interests&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Area&lt;/th&gt;
+          &lt;th&gt;Key Focus&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;NVH &amp;amp; Acoustics&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Noise, vibration, and harshness optimization, acoustic engineering, comfort enhancement&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Artificial Intelligence&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Industrial applications, process optimization, generative AI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Deep &amp;amp; Machine Learning&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Predictive modeling, computer vision, system integration&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Automotive&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Electronic and material architectures, embedded systems, sustainable mobility&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Sustainable Development&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eco-design, circular economy, green technologies&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Innovation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Digital transformation, innovation management, product strategy&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-biography&#34;&gt;&lt;strong&gt;📌 Biography&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;leadership--strategic-vision&#34;&gt;&lt;strong&gt;Leadership &amp;amp; Strategic Vision&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technical and Innovation Director&lt;/strong&gt; with a proven track record in &lt;strong&gt;building and leading high-performing, multicultural, and multidisciplinary teams&lt;/strong&gt; to deliver breakthrough innovations.&lt;/li&gt;
+&lt;li&gt;Expert in &lt;strong&gt;Materials and Electronics Architectures (HW/SW)&lt;/strong&gt; for &lt;strong&gt;Automotive and Aeronautics&lt;/strong&gt;, translating disruptive technologies into impactful business solutions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;approach--achievements&#34;&gt;&lt;strong&gt;Approach &amp;amp; Achievements&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Product Strategy&lt;/strong&gt;: Leads strategic product planning and roadmap execution at &lt;strong&gt;Trèves Group&lt;/strong&gt;, aligning market trends and customer insights to drive global innovation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Innovation &amp;amp; Transformation&lt;/strong&gt;: Spearheads cross-functional innovation and business transformation projects, with strong skills in &lt;strong&gt;marketing strategy&lt;/strong&gt; and solution development.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;International Collaboration&lt;/strong&gt;: Fosters a dynamic culture of &lt;strong&gt;knowledge sharing&lt;/strong&gt; and global teamwork, enabling continuous growth and pioneering achievements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;core-values&#34;&gt;&lt;strong&gt;Core Values&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;✅ &lt;strong&gt;Results-Driven&lt;/strong&gt;: Focused on measurable impact and value creation.
+✅ &lt;strong&gt;Agility&lt;/strong&gt;: Adapts to technological and market shifts.
+✅ &lt;strong&gt;Innovation Culture&lt;/strong&gt;: Promotes creativity and operational excellence.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
