@@ -2,8 +2,12 @@
 draft = false
 +++
 
+[📄 Download CV](/pdf/CV_Jean-Francois_RONDEAU_En.pdf)
+
+---
 # **Driving Technological Advancement on a Global Stage**
 *Bridging the gap between science and market*
+
 
 ---
 
