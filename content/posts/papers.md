@@ -1,6 +1,6 @@
 +++
 date = '2025-12-12T19:01:16+01:00'
-draft = true
+draft = false
 title = 'Academic Portfolio'
 +++
 ## **📚 Overview**
