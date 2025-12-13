@@ -1,0 +1,37 @@
+<div class="skills-container">{{ .Inner }}</div>
+
+<style>
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px; /* Space between tags */
+        margin-top: 20px;
+        margin-left: 120px; /* Aligns with the timeline text */
+        max-width: 800px;
+    }
+
+    .skill-tag {
+        background-color: var(--entry); /* Adapts to Dark/Light mode */
+        color: var(--primary);
+        padding: 8px 16px;
+        border-radius: 20px; /* Pill shape */
+        font-size: 0.9rem;
+        font-weight: 500;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    /* Hover effect */
+    .skill-tag:hover {
+        border-color: var(--primary);
+        transform: translateY(-2px);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        .skills-container {
+            margin-left: 0; /* Center on mobile */
+            justify-content: flex-start;
+        }
+    }
+</style>

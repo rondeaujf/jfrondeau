@@ -3,12 +3,12 @@ date = '2025-12-12T19:01:16+01:00'
 draft = false
 title = 'Academic Portfolio'
 +++
-## **📚 Overview**
+## **Overview**
 This document summarizes the **key academic publications**  focusing on **automotive acoustics, NVH (Noise, Vibration, and Harshness), and lightweight material engineering**. The research spans **active noise control, poroelastic materials, vibroacoustic simulations, and weight reduction strategies** for automotive applications.
 
 ---
 
-## **🎓 PhD Thesis**
+## **PhD Thesis**
 ### **Title: Method for Calculating Aircraft Noise in Dwellings**
 - **University**: Université du Mans, France
 - **Year**: 2002
@@ -27,7 +27,7 @@ This document summarizes the **key academic publications**  focusing on **automo
 
 ---
 
-## **🔬 Key Research Themes**
+## **Key Research Themes**
 
 ### **1. Active Noise Control (ANC) in Vehicle Interiors**
 #### **Efficiency of Active Noise Control Systems in Car Interiors**
@@ -122,7 +122,7 @@ This document summarizes the **key academic publications**  focusing on **automo
 
 ---
 
-## **📊 Research Impact**
+## **Research Impact**
 - **Publications**: 33 (18,521 reads, 320 citations).
 - **Collaborations**: Faurecia, CSTB (Scientific and Technical Center for Building).
 - **Industrial Applications**:
@@ -131,10 +131,10 @@ This document summarizes the **key academic publications**  focusing on **automo
   - Innovative **materials and processes** for automotive NVH.
 
 ---
-## **📚 References**
+## **References**
 - [ResearchGate Profile](https://www.researchgate.net/profile/Jean-Francois-Rondeau)
 - [PhD Thesis](https://theses.fr/2002LEMA1013)
 - **Affiliations**: Faurecia, CSTB.
 
 ---
-**Need further details on a specific publication or a PDF version?** Let me know! 😊
+**Need further details on a specific publication or a PDF version?** Let me know!

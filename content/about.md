@@ -10,7 +10,7 @@ draft = false
 
 ---
 
-## **🔍 Expertise & Interests**
+## **Expertise & Interests**
 
 | Area                     | Key Focus                                                                 |
 |--------------------------|---------------------------------------------------------------------------|
@@ -23,7 +23,7 @@ draft = false
 
 ---
 
-## **📌 Biography**
+## **Biography**
 
 ### **Leadership & Strategic Vision**
 - **Technical and Innovation Director** with a proven track record in **building and leading high-performing, multicultural, and multidisciplinary teams** to deliver breakthrough innovations.
@@ -35,13 +35,13 @@ draft = false
 - **International Collaboration**: Fosters a dynamic culture of **knowledge sharing** and global teamwork, enabling continuous growth and pioneering achievements.
 
 ### **Core Values**
-✅ **Results-Driven**: Focused on measurable impact and value creation.
-✅ **Agility**: Adapts to technological and market shifts.
-✅ **Innovation Culture**: Promotes creativity and operational excellence.
+ **Results-Driven**: Focused on measurable impact and value creation.
+ **Agility**: Adapts to technological and market shifts.
+ **Innovation Culture**: Promotes creativity and operational excellence.
 
 ---
 
-## **🌍 Vision**
+## **Vision**
 *"Innovating for a sustainable future by connecting science with real-world market needs."*
 
 ---

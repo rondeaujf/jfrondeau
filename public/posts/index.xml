@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Jean-François Rondeau</title>
-    <link>http://localhost:35921/posts/</link>
+    <link>http://localhost:33661/posts/</link>
     <description>Recent content in Posts on Jean-François Rondeau</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2025 19:01:16 +0100</lastBuildDate>
-    <atom:link href="http://localhost:35921/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:33661/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Academic Portfolio</title>
-      <link>http://localhost:35921/posts/papers/</link>
+      <link>http://localhost:33661/posts/papers/</link>
       <pubDate>Fri, 12 Dec 2025 19:01:16 +0100</pubDate>
-      <guid>http://localhost:35921/posts/papers/</guid>
-      <description>&lt;h2 id=&#34;-overview&#34;&gt;&lt;strong&gt;📚 Overview&lt;/strong&gt;&lt;/h2&gt;
+      <guid>http://localhost:33661/posts/papers/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;This document summarizes the &lt;strong&gt;key academic publications&lt;/strong&gt;  focusing on &lt;strong&gt;automotive acoustics, NVH (Noise, Vibration, and Harshness), and lightweight material engineering&lt;/strong&gt;. The research spans &lt;strong&gt;active noise control, poroelastic materials, vibroacoustic simulations, and weight reduction strategies&lt;/strong&gt; for automotive applications.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-phd-thesis&#34;&gt;&lt;strong&gt;🎓 PhD Thesis&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;phd-thesis&#34;&gt;&lt;strong&gt;PhD Thesis&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;title-method-for-calculating-aircraft-noise-in-dwellings&#34;&gt;&lt;strong&gt;Title: Method for Calculating Aircraft Noise in Dwellings&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;University&lt;/strong&gt;: Université du Mans, France&lt;/li&gt;
@@ -40,7 +40,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-key-research-themes&#34;&gt;&lt;strong&gt;🔬 Key Research Themes&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;key-research-themes&#34;&gt;&lt;strong&gt;Key Research Themes&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;1-active-noise-control-anc-in-vehicle-interiors&#34;&gt;&lt;strong&gt;1. Active Noise Control (ANC) in Vehicle Interiors&lt;/strong&gt;&lt;/h3&gt;
 &lt;h4 id=&#34;efficiency-of-active-noise-control-systems-in-car-interiors&#34;&gt;&lt;strong&gt;Efficiency of Active Noise Control Systems in Car Interiors&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
@@ -168,7 +168,7 @@ Uses &lt;strong&gt;reverberant chambers&lt;/strong&gt; (e.g., Alpha Cabin) to me
 Ensures reliability of acoustic simulations for industrial applications.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-research-impact&#34;&gt;&lt;strong&gt;📊 Research Impact&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;research-impact&#34;&gt;&lt;strong&gt;Research Impact&lt;/strong&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Publications&lt;/strong&gt;: 33 (18,521 reads, 320 citations).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Collaborations&lt;/strong&gt;: Faurecia, CSTB (Scientific and Technical Center for Building).&lt;/li&gt;
@@ -181,25 +181,25 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-references&#34;&gt;&lt;strong&gt;📚 References&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;references&#34;&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.researchgate.net/profile/Jean-Francois-Rondeau&#34;&gt;ResearchGate Profile&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://theses.fr/2002LEMA1013&#34;&gt;PhD Thesis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Affiliations&lt;/strong&gt;: Faurecia, CSTB.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Need further details on a specific publication or a PDF version?&lt;/strong&gt; Let me know! 😊&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Need further details on a specific publication or a PDF version?&lt;/strong&gt; Let me know!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Patents</title>
-      <link>http://localhost:35921/posts/patents/</link>
+      <link>http://localhost:33661/posts/patents/</link>
       <pubDate>Tue, 09 Dec 2025 12:47:43 +0000</pubDate>
-      <guid>http://localhost:35921/posts/patents/</guid>
+      <guid>http://localhost:33661/posts/patents/</guid>
       <description>&lt;h1 id=&#34;patent-portfolio-jean-françois-rondeau&#34;&gt;Patent Portfolio: Jean-François Rondeau&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Professional Focus:&lt;/strong&gt; Automotive Acoustics, Noise Vibration &amp;amp; Harshness (NVH), Audio Systems, and Material Engineering.
 &lt;strong&gt;Primary Assignee:&lt;/strong&gt; Faurecia (Faurecia Clarion Electronics Europe, Faurecia Automotive Industrie, Faurecia Interieur).&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-summary-of-patents--applications&#34;&gt;📌 Summary of Patents &amp;amp; Applications&lt;/h2&gt;
+&lt;h2 id=&#34;summary-of-patents--applications&#34;&gt;Summary of Patents &amp;amp; Applications&lt;/h2&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -214,7 +214,7 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;Audio method and system for a seat headrest&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;US 12,317,060&lt;/strong&gt; (Granted) &lt;!-- raw HTML omitted --&gt; US2022/0329949&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;US 12,317,060&lt;/strong&gt; (Granted) &lt;br&gt; US2022/0329949&lt;/td&gt;
           &lt;td&gt;Filed: Dec 22, 2020&lt;/td&gt;
           &lt;td&gt;Faurecia Clarion Electronics Europe&lt;/td&gt;
           &lt;td&gt;Christophe Mattei, Nicolas Pignier&lt;/td&gt;
@@ -222,8 +222,8 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;Soundproofing assembly for an automobile&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;US8695757B2&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt; US2012037447A1&lt;/td&gt;
-          &lt;td&gt;Grant: Apr 15, 2014 &lt;!-- raw HTML omitted --&gt; Filed: Feb 20, 2009&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;US8695757B2&lt;/strong&gt; &lt;br&gt; US2012037447A1&lt;/td&gt;
+          &lt;td&gt;Grant: Apr 15, 2014 &lt;br&gt; Filed: Feb 20, 2009&lt;/td&gt;
           &lt;td&gt;Faurecia Automotive Industrie&lt;/td&gt;
           &lt;td&gt;Lars Bischoff, Arnaud Duval&lt;/td&gt;
           &lt;td&gt;G10K11/168, B32B5/22, B60R13/08&lt;/td&gt;
@@ -231,15 +231,15 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;Conduit de circulation d&amp;rsquo;air avec propriétés acoustiques&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;&lt;strong&gt;WO2006131660A1&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Pub: Dec 14, 2006 &lt;!-- raw HTML omitted --&gt; Filed: Jun 10, 2005&lt;/td&gt;
+          &lt;td&gt;Pub: Dec 14, 2006 &lt;br&gt; Filed: Jun 10, 2005&lt;/td&gt;
           &lt;td&gt;Faurecia Interieur Ind&lt;/td&gt;
           &lt;td&gt;Arnaud Duval, Pauline Kannengiesser&lt;/td&gt;
           &lt;td&gt;F16L55/033, F24F13/02&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;Soundproofing structure&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;EP 1 474 314 B1&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt; FR2839294&lt;/td&gt;
-          &lt;td&gt;Grant: Sep 7, 2010 &lt;!-- raw HTML omitted --&gt; Filed: Apr 17, 2004&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;EP 1 474 314 B1&lt;/strong&gt; &lt;br&gt; FR2839294&lt;/td&gt;
+          &lt;td&gt;Grant: Sep 7, 2010 &lt;br&gt; Filed: Apr 17, 2004&lt;/td&gt;
           &lt;td&gt;Faurecia Automotive Industrie&lt;/td&gt;
           &lt;td&gt;Arnaud Duval, Valérie Marcel, Patrice Charbonnier&lt;/td&gt;
           &lt;td&gt;G10K11/168, B32B5/22&lt;/td&gt;
@@ -255,7 +255,7 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;Component for a motor vehicle&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;&lt;strong&gt;CN104093558A/B&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Pub: Oct 8, 2014 &lt;!-- raw HTML omitted --&gt; Filed: Jan 26, 2012&lt;/td&gt;
+          &lt;td&gt;Pub: Oct 8, 2014 &lt;br&gt; Filed: Jan 26, 2012&lt;/td&gt;
           &lt;td&gt;Faurecia Automotive Ind&lt;/td&gt;
           &lt;td&gt;Philippe-Jean Marcq&lt;/td&gt;
           &lt;td&gt;B32B3/263, B60R13/0838&lt;/td&gt;
@@ -263,7 +263,7 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;Ensemble d&amp;rsquo;insonorisation avec film fin&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;&lt;strong&gt;EP2159786A1/B1&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Pub: Mar 3, 2010 &lt;!-- raw HTML omitted --&gt; Filed: Aug 25, 2008&lt;/td&gt;
+          &lt;td&gt;Pub: Mar 3, 2010 &lt;br&gt; Filed: Aug 25, 2008&lt;/td&gt;
           &lt;td&gt;Faurecia Automotive Ind&lt;/td&gt;
           &lt;td&gt;Guillaume Deshayes, Arnaud Duval&lt;/td&gt;
           &lt;td&gt;G10K11/168&lt;/td&gt;
@@ -271,7 +271,7 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;Procédé et outil pour traitement de paroi&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;&lt;strong&gt;WO9934093A1&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Pub: Jul 8, 1999 &lt;!-- raw HTML omitted --&gt; Filed: Dec 24, 1997&lt;/td&gt;
+          &lt;td&gt;Pub: Jul 8, 1999 &lt;br&gt; Filed: Dec 24, 1997&lt;/td&gt;
           &lt;td&gt;Schlumberger, Sofitech NV&lt;/td&gt;
           &lt;td&gt;Jean-François Baret, Bernard Montaron&lt;/td&gt;
           &lt;td&gt;E21B27/02, E21B33/138&lt;/td&gt;
@@ -279,8 +279,33 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-research-context--key-technologies&#34;&gt;🔬 Research Context &amp;amp; Key Technologies&lt;/h2&gt;
+&lt;h2 id=&#34;research-context--key-technologies&#34;&gt;Research Context &amp;amp; Key Technologies&lt;/h2&gt;
 &lt;p&gt;Jean-François Rondeau&amp;rsquo;s patent activity spans &lt;strong&gt;active and passive acoustics&lt;/strong&gt;, &lt;strong&gt;material engineering&lt;/strong&gt;, and &lt;strong&gt;manufacturing processes&lt;/strong&gt; for automotive applications:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Faurecia in Conversation</title>
+      <link>http://localhost:33661/posts/faurecia_in_conversation/</link>
+      <pubDate>Thu, 09 Dec 2021 12:47:43 +0000</pubDate>
+      <guid>http://localhost:33661/posts/faurecia_in_conversation/</guid>
+      <description>&lt;h3 id=&#34;in-the-media&#34;&gt;In the Media&lt;/h3&gt;
+&lt;div style=&#34;max-width: 800px; margin: 20px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);&#34;&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+          &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/FLrwEGBKXxo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; max-width: 800px; margin: 10px auto; color: var(--secondary); font-size: 0.95rem;&#34;&gt;
+    &lt;strong&gt;Faurecia in Conversation (Ep. 1):&lt;/strong&gt; 
+    Discussing &lt;a href=&#34;https://creodynamics.com/2021/06/21/faurecia-in-conversation/&#34; target=&#34;_blank&#34; style=&#34;color: var(--primary);&#34;&gt;Active Noise Control solutions&lt;/a&gt; and the future of mobility as General Manager of Faurecia Creo Dynamics.
+&lt;/div&gt;
+&lt;div style=&#34;max-width: 800px; margin: 20px auto; color: var(--secondary);&#34;&gt;
+    &lt;div style=&#34;margin-bottom: 15px;&#34;&gt;
+        &lt;img src=&#34;http://localhost:33661/pictures/creo-logo.png&#34; alt=&#34;Creo Dynamics&#34; 
+             style=&#34;display: block; margin: 0 auto; height: 35px; width: auto; opacity: 0.9;&#34;&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+        In this debut episode of the &lt;em&gt;Faurecia in Conversation&lt;/em&gt; podcast, Jean-François Rondeau discusses the role of &lt;strong&gt;Faurecia Creo Dynamics&lt;/strong&gt; in shaping the future of acoustic comfort.
+    &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
