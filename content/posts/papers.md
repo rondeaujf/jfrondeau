@@ -1,5 +1,5 @@
 +++
-date = '2025-12-12T19:01:16+01:00'
+date = '2020-12-12T19:01:16+01:00'
 draft = false
 title = 'Academic Portfolio'
 +++
