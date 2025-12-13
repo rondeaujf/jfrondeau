@@ -2,11 +2,26 @@ baseURL = 'https://jfrondeau.fr/'
 languageCode = 'en-us'
 title = 'Jean-François Rondeau'
 theme = 'PaperMod'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 [params]
     defaultTheme = "dark"  # Active le thème sombre par défaut
     # Activez l'affichage de l'en-tête avec photo et réseaux sociaux
-    profileMode = { enabled = true, title = "Dr.Jean-François Rondeau", subtitle = "Innovation & Technology Director | International R&D", imageUrl = "pictures/Avatar_JFR.png", imageTitle = "Dr.Jeff", imageWidth = 120, imageHeight = 120 }
+    [params.profileMode]
+        enabled = true
+        title = "Jean-François Rondeau"
+        subtitle = "Innovation & Technology Director | International R&D "
+        imageUrl = "pictures/Avatar_JFR.png"
+        imageTitle = "Dr.Jeff"
+        imageWidth = 120
+        imageHeight = 120
 
+        # This creates the button below the social icons
+        [[params.profileMode.buttons]]
+            name = "Download CV"
+            url = "/pdf/CV_Jean-Francois_RONDEAU_En.pdf"
     [[params.socialIcons]]
     name = "linkedin"
     url = "https://linkedin.com/in/jean-francois-rondeau"

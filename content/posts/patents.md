@@ -11,7 +11,7 @@ title = 'Patents'
 
 ---
 
-## 📌 Summary of Patents & Applications
+## Summary of Patents & Applications
 
 | **Patent Title**                                      | **Patent / Publication Number**               | **Filing / Publication Date**       | **Assignee**                          | **Co-Inventors**                          | **CIB/CPC Classifications**                     |
 |-------------------------------------------------------|-----------------------------------------------|-------------------------------------|---------------------------------------|-------------------------------------------|-----------------------------------------------|
@@ -26,7 +26,7 @@ title = 'Patents'
 
 ---
 
-## 🔬 Research Context & Key Technologies
+## Research Context & Key Technologies
 Jean-François Rondeau's patent activity spans **active and passive acoustics**, **material engineering**, and **manufacturing processes** for automotive applications:
 - **Active Acoustics:** Integration of audio systems into vehicle seating (e.g., US 12,317,060).
 - **Passive Acoustics:** Development of porous/fibrous materials for noise absorption (e.g., EP 1 474 314 B1).
@@ -34,7 +34,7 @@ Jean-François Rondeau's patent activity spans **active and passive acoustics**,
 
 ---
 
-## 📚 Sources
+## Sources
 - European Patent Office (EPO)
 - United States Patent and Trademark Office (USPTO)
 - Google Patents / INPI / WIPO

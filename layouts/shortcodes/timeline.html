@@ -1,0 +1,79 @@
+<div class="timeline-container">{{ .Inner }}</div>
+
+<style>
+    /* Main Container with the Vertical Line */
+    .timeline-container {
+        /* Push the whole block right to make space for years */
+        margin-left: 120px;
+        border-left: 2px solid var(--primary); /* The vertical line */
+        padding: 0 0 20px 30px; /* Space between line and text */
+        position: relative;
+        max-width: 800px;
+    }
+
+    /* Individual Entry Block */
+    .timeline-item {
+        position: relative;
+        margin-bottom: 40px; /* Space between jobs */
+    }
+
+    /* THE YEAR - Positioned to the Left */
+    .timeline-year {
+        position: absolute;
+        left: -160px; /* Move it to the left side of the line */
+        width: 120px; /* Fixed width to align right */
+        text-align: right;
+        top: 0;
+        font-weight: bold;
+        color: var(--primary);
+        font-size: 1rem;
+        line-height: 1.3; /* Align with title */
+    }
+
+    /* The Dot on the Line */
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        /* positioning calc: -30px (padding) - 6px (half dot) - 1px (line width) */
+        left: -37px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+        background: var(--theme); /* Matches background color (Dark/Light) */
+        border: 2px solid var(--primary);
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .timeline-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+        line-height: 1.3;
+    }
+
+    .timeline-desc {
+        color: var(--secondary); /* Slightly softer text color */
+        margin-top: 8px;
+        font-size: 0.95rem;
+    }
+
+    /* MOBILE VIEW: Stack everything vertically on phones */
+    @media (max-width: 768px) {
+        .timeline-container {
+            margin-left: 10px;
+            padding-left: 20px;
+        }
+
+        .timeline-year {
+            position: static; /* Remove absolute positioning */
+            text-align: left;
+            width: auto;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item::before {
+            left: -27px; /* Re-align dot for smaller padding */
+        }
+    }
+</style>

@@ -1,0 +1,48 @@
+/* Base Button Style */
+.btn {
+    display: inline-block;
+    font-weight: bold;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+/* Primary Color Style (The "Download" look) */
+.btn-primary {
+    color: #fff;
+    /* Adjust this HEX code to match your theme's primary color */
+    background-color: grey;
+    border-color: lightgray;
+    box-shadow:
+        0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Hover Effect */
+.btn-primary:hover {
+    color: #fff;
+    background-color: darkgrey; /* Slightly darker shade */
+    border-color: #0d47a1;
+    box-shadow:
+        0 5px 11px 0 rgba(0, 0, 0, 0.18),
+        0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Rounded Pill Shape (If his button is fully rounded) */
+.btn-rounded {
+    border-radius: 0.7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
