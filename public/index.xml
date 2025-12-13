@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Welcome on Jean-François Rondeau</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:35921/</link>
     <description>Recent content in Welcome on Jean-François Rondeau</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2025 19:01:16 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35921/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Academic Portfolio</title>
-      <link>http://localhost:1313/posts/papers/</link>
+      <link>http://localhost:35921/posts/papers/</link>
       <pubDate>Fri, 12 Dec 2025 19:01:16 +0100</pubDate>
-      <guid>http://localhost:1313/posts/papers/</guid>
+      <guid>http://localhost:35921/posts/papers/</guid>
       <description>&lt;h2 id=&#34;-overview&#34;&gt;&lt;strong&gt;📚 Overview&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;This document summarizes the &lt;strong&gt;key academic publications&lt;/strong&gt;  focusing on &lt;strong&gt;automotive acoustics, NVH (Noise, Vibration, and Harshness), and lightweight material engineering&lt;/strong&gt;. The research spans &lt;strong&gt;active noise control, poroelastic materials, vibroacoustic simulations, and weight reduction strategies&lt;/strong&gt; for automotive applications.&lt;/p&gt;
 &lt;hr&gt;
@@ -192,9 +192,9 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/contact/</link>
+      <link>http://localhost:35921/contact/</link>
       <pubDate>Fri, 12 Dec 2025 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>http://localhost:35921/contact/</guid>
       <description>&lt;h1 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h1&gt;
 &lt;p&gt;Feel free to reach out via the form below or connect with me on social media.&lt;/p&gt;
 &lt;hr&gt;
@@ -225,9 +225,9 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
     </item>
     <item>
       <title>Patents</title>
-      <link>http://localhost:1313/posts/patents/</link>
+      <link>http://localhost:35921/posts/patents/</link>
       <pubDate>Tue, 09 Dec 2025 12:47:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/patents/</guid>
+      <guid>http://localhost:35921/posts/patents/</guid>
       <description>&lt;h1 id=&#34;patent-portfolio-jean-françois-rondeau&#34;&gt;Patent Portfolio: Jean-François Rondeau&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Professional Focus:&lt;/strong&gt; Automotive Acoustics, Noise Vibration &amp;amp; Harshness (NVH), Audio Systems, and Material Engineering.
 &lt;strong&gt;Primary Assignee:&lt;/strong&gt; Faurecia (Faurecia Clarion Electronics Europe, Faurecia Automotive Industrie, Faurecia Interieur).&lt;/p&gt;
@@ -317,66 +317,18 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:35921/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pdf/CV_Jean-Francois_RONDEAU_En.pdf&#34;&gt;📄 Download CV&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
+      <guid>http://localhost:35921/about/</guid>
+      <description>&lt;h2 id=&#34;hahahugoshortcode32s0hbhb&#34;&gt;&lt;a href=&#34;http://localhost:35921/pdf/CV_Jean-Francois_RONDEAU_En.pdf&#34; class=&#34;btn btn-primary btn-rounded&#34; style=&#34;display: inline-flex; align-items: center; gap: 8px;&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;1em&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;currentColor&#34;&gt;
+        &lt;path d=&#34;M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z&#34;/&gt;
+    &lt;/svg&gt;
+    Download CV
+&lt;/a&gt;
+&lt;/h2&gt;
 &lt;h1 id=&#34;driving-technological-advancement-on-a-global-stage&#34;&gt;&lt;strong&gt;Driving Technological Advancement on a Global Stage&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;Bridging the gap between science and market&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-expertise--interests&#34;&gt;&lt;strong&gt;🔍 Expertise &amp;amp; Interests&lt;/strong&gt;&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Area&lt;/th&gt;
-          &lt;th&gt;Key Focus&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;NVH &amp;amp; Acoustics&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Noise, vibration, and harshness optimization, acoustic engineering, comfort enhancement&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Artificial Intelligence&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Industrial applications, process optimization, generative AI&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Deep &amp;amp; Machine Learning&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Predictive modeling, computer vision, system integration&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Automotive&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Electronic and material architectures, embedded systems, sustainable mobility&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Sustainable Development&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Eco-design, circular economy, green technologies&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Innovation&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Digital transformation, innovation management, product strategy&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-biography&#34;&gt;&lt;strong&gt;📌 Biography&lt;/strong&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;leadership--strategic-vision&#34;&gt;&lt;strong&gt;Leadership &amp;amp; Strategic Vision&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Technical and Innovation Director&lt;/strong&gt; with a proven track record in &lt;strong&gt;building and leading high-performing, multicultural, and multidisciplinary teams&lt;/strong&gt; to deliver breakthrough innovations.&lt;/li&gt;
-&lt;li&gt;Expert in &lt;strong&gt;Materials and Electronics Architectures (HW/SW)&lt;/strong&gt; for &lt;strong&gt;Automotive and Aeronautics&lt;/strong&gt;, translating disruptive technologies into impactful business solutions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;approach--achievements&#34;&gt;&lt;strong&gt;Approach &amp;amp; Achievements&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Product Strategy&lt;/strong&gt;: Leads strategic product planning and roadmap execution at &lt;strong&gt;Trèves Group&lt;/strong&gt;, aligning market trends and customer insights to drive global innovation.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Innovation &amp;amp; Transformation&lt;/strong&gt;: Spearheads cross-functional innovation and business transformation projects, with strong skills in &lt;strong&gt;marketing strategy&lt;/strong&gt; and solution development.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;International Collaboration&lt;/strong&gt;: Fosters a dynamic culture of &lt;strong&gt;knowledge sharing&lt;/strong&gt; and global teamwork, enabling continuous growth and pioneering achievements.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;core-values&#34;&gt;&lt;strong&gt;Core Values&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;✅ &lt;strong&gt;Results-Driven&lt;/strong&gt;: Focused on measurable impact and value creation.
-✅ &lt;strong&gt;Agility&lt;/strong&gt;: Adapts to technological and market shifts.
-✅ &lt;strong&gt;Innovation Culture&lt;/strong&gt;: Promotes creativity and operational excellence.&lt;/p&gt;</description>
+&lt;p&gt;&lt;em&gt;Bridging the gap between science and market&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

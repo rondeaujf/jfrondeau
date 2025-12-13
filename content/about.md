@@ -2,8 +2,7 @@
 draft = false
 +++
 
-[📄 Download CV](/pdf/CV_Jean-Francois_RONDEAU_En.pdf)
-
+{{< button url="/pdf/CV_Jean-Francois_RONDEAU_En.pdf" text="Download CV" >}}
 ---
 # **Driving Technological Advancement on a Global Stage**
 *Bridging the gap between science and market*

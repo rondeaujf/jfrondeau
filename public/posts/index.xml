@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Jean-François Rondeau</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:35921/posts/</link>
     <description>Recent content in Posts on Jean-François Rondeau</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2025 19:01:16 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35921/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Academic Portfolio</title>
-      <link>http://localhost:1313/posts/papers/</link>
+      <link>http://localhost:35921/posts/papers/</link>
       <pubDate>Fri, 12 Dec 2025 19:01:16 +0100</pubDate>
-      <guid>http://localhost:1313/posts/papers/</guid>
+      <guid>http://localhost:35921/posts/papers/</guid>
       <description>&lt;h2 id=&#34;-overview&#34;&gt;&lt;strong&gt;📚 Overview&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;This document summarizes the &lt;strong&gt;key academic publications&lt;/strong&gt;  focusing on &lt;strong&gt;automotive acoustics, NVH (Noise, Vibration, and Harshness), and lightweight material engineering&lt;/strong&gt;. The research spans &lt;strong&gt;active noise control, poroelastic materials, vibroacoustic simulations, and weight reduction strategies&lt;/strong&gt; for automotive applications.&lt;/p&gt;
 &lt;hr&gt;
@@ -192,9 +192,9 @@ Ensures reliability of acoustic simulations for industrial applications.&lt;/li&
     </item>
     <item>
       <title>Patents</title>
-      <link>http://localhost:1313/posts/patents/</link>
+      <link>http://localhost:35921/posts/patents/</link>
       <pubDate>Tue, 09 Dec 2025 12:47:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/patents/</guid>
+      <guid>http://localhost:35921/posts/patents/</guid>
       <description>&lt;h1 id=&#34;patent-portfolio-jean-françois-rondeau&#34;&gt;Patent Portfolio: Jean-François Rondeau&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Professional Focus:&lt;/strong&gt; Automotive Acoustics, Noise Vibration &amp;amp; Harshness (NVH), Audio Systems, and Material Engineering.
 &lt;strong&gt;Primary Assignee:&lt;/strong&gt; Faurecia (Faurecia Clarion Electronics Europe, Faurecia Automotive Industrie, Faurecia Interieur).&lt;/p&gt;
