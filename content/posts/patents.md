@@ -1,5 +1,5 @@
 +++
-date = '2025-12-09T12:47:43Z'
+date = '2020-12-09T12:47:43Z'
 draft = false
 title = 'Patents'
 +++
