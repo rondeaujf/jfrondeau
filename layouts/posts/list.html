@@ -1,41 +1,61 @@
-{{ define "main" }} {{ partial "header.html" . }}
-<header class="page-header">
-    {{ partial "breadcrumbs.html" . }}
-    <h1>{{ .Title }}</h1>
-</header>
-
-<div class="posts-list-aligned">
-    {{ range .Pages }}
-    <article class="post-entry-aligned">
-        {{ if .Params.images }}
-        <div class="thumbnail-aligned-container">
-            <a href="{{ .RelPermalink }}" class="thumbnail-aligned-link">
-                <img
-                    src="{{ (index .Params.images 0) | relURL }}"
-                    alt="{{ .Title }}"
-                    class="thumbnail-aligned-img"
-                    loading="lazy"
-                />
-            </a>
-        </div>
-        {{ end }}
-        <div class="content-aligned-container">
-            <header class="entry-header">
-                <h2 class="entry-hint-parent">{{ .Title }}</h2>
-            </header>
-            <div class="entry-content">
-                <p>{{ .Summary | plainify | truncate 120 }}</p>
-            </div>
-            <footer class="entry-footer">
-                {{ partial "post_meta.html" . }}
-            </footer>
-            <a
-                class="entry-link"
-                aria-label="{{ .Title }}"
-                href="{{ .RelPermalink }}"
-            ></a>
-        </div>
-    </article>
+{{ define "main" }}
+<div class="posts-list-clickable">
+  {{ range .Pages }}
+  <a href="{{ .RelPermalink }}" class="post-entry-clickable">
+    {{ if or (.Params.images_light) (.Params.images_dark) }}
+    <div class="thumbnail-clickable-container">
+      <img src="{{ if .Site.Params.defaultTheme | eq "dark" }}{{ (index .Params.images_dark 0) | relURL }}{{ else }}{{ (index .Params.images_light 0) | relURL }}{{ end }}"
+           alt="{{ .Title }}"
+           class="thumbnail-clickable-img"
+           data-light="{{ (index .Params.images_light 0) | relURL }}"
+           data-dark="{{ (index .Params.images_dark 0) | relURL }}"
+           loading="lazy">
+    </div>
     {{ end }}
+    <div class="content-clickable-container">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">{{ .Title }}</h2>
+      </header>
+      <div class="entry-content">
+        <p>{{ .Summary | plainify | truncate 120 }}</p>
+      </div>
+      <footer class="entry-footer">
+        {{ partial "post_meta.html" . }}
+      </footer>
+    </div>
+  </a>
+  {{ end }}
 </div>
+
+<!-- Ajoutez ce script pour gérer le changement dynamique -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Fonction pour mettre à jour les images en fonction du thème
+  function updateThemeImages() {
+    const isDark = document.querySelector('html').dataset.theme === 'dark';
+    document.querySelectorAll('.thumbnail-clickable-img').forEach(img => {
+      if (img.dataset.light && img.dataset.dark) {
+        img.src = isDark ? img.dataset.dark : img.dataset.light;
+      }
+    });
+  }
+
+  // Met à jour au chargement
+  updateThemeImages();
+
+  // Écoute les changements de thème via le bouton de toggle
+  const themeToggle = document.querySelector('#theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function() {
+      // Petit délai pour laisser le temps au thème de changer
+      setTimeout(updateThemeImages, 100);
+    });
+  }
+
+  // Écoute aussi les changements via les préférences système
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    setTimeout(updateThemeImages, 100);
+  });
+});
+</script>
 {{ end }}

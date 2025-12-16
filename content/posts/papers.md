@@ -2,7 +2,8 @@
 date = '2020-12-12T19:01:16+01:00'
 draft = false
 title = 'Academic Portfolio'
-images = ["pictures/academic_portfolio.png"]
+images_light = ["pictures/light/academic_portfolio.png"]
+images_dark = ["pictures/dark/academic_portfolio.png"]
 +++
 ## **Overview**
 This document summarizes the **key academic publications**  focusing on **automotive acoustics, NVH (Noise, Vibration, and Harshness), and lightweight material engineering**. The research spans **active noise control, poroelastic materials, vibroacoustic simulations, and weight reduction strategies** for automotive applications.

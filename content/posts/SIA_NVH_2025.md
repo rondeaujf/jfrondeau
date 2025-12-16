@@ -2,7 +2,8 @@
 date = '2025-10-01T12:00:00Z'
 draft = false
 title = 'Sounds of Electrons'
-images = ["pictures/logo-sia.png"] 
+images_light = ["pictures/light/logo-sia.png"]
+images_dark = ["pictures/dark/logo-sia.png"]
 +++
 # Invitation to the SIA NVH 2025 Congress: Compose with Us the Sounds of Electrons
 
