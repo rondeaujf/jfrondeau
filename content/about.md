@@ -40,8 +40,11 @@ draft = false
  **Innovation Culture**: Promotes creativity and operational excellence.
 
 ---
-
 ## **Vision**
 *"Innovating for a sustainable future by connecting science with real-world market needs."*
 
 ---
+## **Academic Contributions & Intellectual Property**
+**[Research Publications](/posts/papers)** – My scientific articles and conference papers
+
+**[Patented Innovations](/posts/patents)** – My registered inventions and technical solutions
