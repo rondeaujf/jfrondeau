@@ -1,0 +1,41 @@
+{{ define "main" }} {{ partial "header.html" . }}
+<header class="page-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+</header>
+
+<div class="posts-list-aligned">
+    {{ range .Pages }}
+    <article class="post-entry-aligned">
+        {{ if .Params.images }}
+        <div class="thumbnail-aligned-container">
+            <a href="{{ .RelPermalink }}" class="thumbnail-aligned-link">
+                <img
+                    src="{{ (index .Params.images 0) | relURL }}"
+                    alt="{{ .Title }}"
+                    class="thumbnail-aligned-img"
+                    loading="lazy"
+                />
+            </a>
+        </div>
+        {{ end }}
+        <div class="content-aligned-container">
+            <header class="entry-header">
+                <h2 class="entry-hint-parent">{{ .Title }}</h2>
+            </header>
+            <div class="entry-content">
+                <p>{{ .Summary | plainify | truncate 120 }}</p>
+            </div>
+            <footer class="entry-footer">
+                {{ partial "post_meta.html" . }}
+            </footer>
+            <a
+                class="entry-link"
+                aria-label="{{ .Title }}"
+                href="{{ .RelPermalink }}"
+            ></a>
+        </div>
+    </article>
+    {{ end }}
+</div>
+{{ end }}

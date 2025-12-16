@@ -2,6 +2,7 @@
 date = '2021-12-09T12:47:43Z'
 draft = false
 title = 'Faurecia in Conversation'
+images = ["pictures/forvia-faurecia.png"]
 +++
 ### In the Media
 

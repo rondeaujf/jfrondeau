@@ -2,62 +2,81 @@ baseURL = 'https://jfrondeau.fr/'
 languageCode = 'en-us'
 title = 'Jean-François Rondeau'
 theme = 'PaperMod'
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-[params]
-    defaultTheme = "dark"  # Active le thème sombre par défaut
-    # Activez l'affichage de l'en-tête avec photo et réseaux sociaux
-    [params.profileMode]
-        enabled = true
-        title = "Jean-François Rondeau"
-        subtitle = "Innovation & Technology Director | International R&D "
-        imageUrl = "pictures/Avatar_JFR.png"
-        imageTitle = "Dr.Jeff"
-        imageWidth = 120
-        imageHeight = 120
 
-        # This creates the button below the social icons
-        [[params.profileMode.buttons]]
-            name = "Download CV"
-            url = "/pdf/CV_Jean-Francois_RONDEAU_En.pdf"
-    [[params.socialIcons]]
+[params]
+  defaultTheme = "dark"
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = true
+  ShowToc = true
+
+  # Configuration pour les images d'illustration
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+    linkFullImages = true  # Permet de cliquer sur l'image pour la voir en taille réelle
+    # Image par défaut pour les articles sans thumbnail
+  [params.cover.defaultCover]
+        image = "pictures/Avatar_JFR.png"
+  # Configuration du mode profil (déjà présente chez vous)
+  [params.profileMode]
+    enabled = true
+    title = "Jean-François Rondeau"
+    subtitle = "Innovation & Technology Director | International R&D"
+    imageUrl = "pictures/Avatar_JFR.png"
+    imageTitle = "Dr.Jeff"
+    imageWidth = 120
+    imageHeight = 120
+
+    [[params.profileMode.buttons]]
+      name = "Download CV"
+      url = "/pdf/CV_Jean-Francois_RONDEAU_En.pdf"
+
+  # Configuration des icônes sociales (déjà présente chez vous)
+  [[params.socialIcons]]
     name = "linkedin"
     url = "https://linkedin.com/in/jean-francois-rondeau"
 
-    [[params.socialIcons]]
+  [[params.socialIcons]]
     name = "github"
     url = "https://github.com/rondeaujf"
 
-    [[params.socialIcons]]
+  [[params.socialIcons]]
     name = "email"
     url = "mailto:contact@jfrondeau.fr"
 
-    [[params.socialIcons]]
+  [[params.socialIcons]]
     name = "wechat"
     url = "https://u.wechat.com/JeffR-B"
 
+# Configuration du menu (déjà présente chez vous)
 [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
 
 [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 2
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
 
 [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 3
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 3
 
 [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 4
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 4

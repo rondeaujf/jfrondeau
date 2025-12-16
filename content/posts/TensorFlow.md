@@ -2,6 +2,7 @@
 date = '2025-11-01T12:00:00Z'
 draft = false
 title = 'Unlock the Magic of Neural Networks'
+images = ["pictures/Tensorflow_logo.svg.png"]
 +++
 # Unlock the Magic of Neural Networks with TensorFlow Playground!
 
