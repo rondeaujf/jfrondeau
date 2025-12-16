@@ -2,7 +2,8 @@
 date = '2021-12-09T12:47:43Z'
 draft = false
 title = 'Faurecia in Conversation'
-images = ["pictures/forvia-faurecia.png"]
+images_light = ["pictures/light/forvia-faurecia.png"]
+images_dark = ["pictures/dark/forvia-faurecia.png"]
 +++
 ### In the Media
 

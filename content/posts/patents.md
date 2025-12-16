@@ -2,7 +2,8 @@
 date = '2020-12-09T12:47:43Z'
 draft = false
 title = 'Patents'
-images = ["pictures/patent.png"]
+images_light = ["pictures/light/patent.png"]
+images_dark = ["pictures/dark/patent.png"]
 +++
 
 # Patent Portfolio: Jean-François Rondeau

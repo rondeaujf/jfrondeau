@@ -2,7 +2,9 @@
 title: "Machine Learning Basics"
 date: 2025-12-05
 description: "A curated selection of essential resources for starting or deepening your knowledge in machine learning."
-images: ["pictures/machine-learning.png"] 
+images_light : ["pictures/light/machine-learning.png"]
+images_dark : ["pictures/dark/machine-learning.png"]
+
 ---
 
 # Recommended Resources for Learning Machine Learning
