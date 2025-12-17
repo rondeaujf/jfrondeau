@@ -134,3 +134,18 @@
 .thumbnail-clickable-img[src*="/light/"] {
     display: block;
 }
+/* Par défaut (Mode Sombre) */
+.image-switch .light-img {
+    display: block;
+}
+.image-switch .dark-img {
+    display: none;
+}
+
+/* Quand le bouton PaperMod active le mode sombre */
+[data-theme="dark"] .image-switch .light-img {
+    display: none;
+}
+[data-theme="dark"] .image-switch .dark-img {
+    display: block;
+}

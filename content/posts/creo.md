@@ -9,7 +9,12 @@ description: "Reflecting on 2.5 years of transforming a high-tech Swedish expert
 images_light : ["pictures/light/creo-logo.png"]
 images_dark : ["pictures/dark/creo-logo.png"]
 ---
-<img src="/pictures/creo-head.png" style="float: left; margin-right: 20px;margin-bottom: 10px;"> 
+
+<div class="image-switch" style=" margin: 0 auto;">
+   <img src="/pictures/creo-head-light.png" class="light-img" alt="light case" style="float: left; margin-right: 20px;margin-bottom: 10px;">
+   <img src="/pictures/creo-head-dark.png" class="dark-img" alt="dark case" style="float: left; margin-right: 20px;margin-bottom: 10px;">
+</div>
+
 As I conclude my mission as CEO of **Creodynamics** (August 2020 – December 2022), I look back on a period defined by intense transformation. Taking the helm of this Linköping-based center of excellence during the height of the global pandemic was a challenge that required not just management, but a complete strategic reimagining of how high-level physics expertise fits into the modern industrial world.
 
 
@@ -38,6 +43,12 @@ My role was to act as the bridge. We leveraged the advanced simulation methodolo
 Nowhere was this scale-up more evident than in our work on **Active Noise Control (ANC)**.
 
 During this period, we moved ANC from an experimental concept to a market-ready reality. As vehicles became electrified, the removal of the combustion engine unveiled new, intrusive road noises. We positioned Creodynamics as the leader in solving this new acoustic reality.
+
+
+<div class="image-switch" style="width: 50%; margin: 0 auto;">
+   <img src="/pictures/anc_rr_light.png" class="light-img" alt="light case">
+   <img src="/pictures/anc_rr_dark.png" class="dark-img" alt="dark case">
+</div>
 
 We didn't just model the sound; we developed the software algorithms and hardware integration strategies to cancel it out in real-time. Turning this complex wave physics into a robust, embedded software product for mass-market vehicles was the ultimate proof of our successful scale-up.
 
