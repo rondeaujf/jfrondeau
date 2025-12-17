@@ -47,9 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.querySelector('#theme-toggle');
   if (themeToggle) {
     themeToggle.addEventListener('click', function() {
-      console.log('Theme toggle clicked');
-      document.body.classList.toggle('dark');
-        localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
       // Petit délai pour laisser le temps au thème de changer
       setTimeout(updateThemeImages, 100);
     });
