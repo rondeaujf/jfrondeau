@@ -6,11 +6,17 @@ author: "Jean-François Rondeau"
 tags: ["Leadership", "Scale-Up", "Active Noise Control", "Aerospace", "Automotive", "Retrospective"]
 categories: ["Career Milestones", "Industrial Strategy"]
 description: "Reflecting on 2.5 years of transforming a high-tech Swedish expert center into a scalable global player bridging Aerospace, Defense, and Automotive."
+images_light : ["pictures/light/creo-logo.png"]
+images_dark : ["pictures/dark/creo-logo.png"]
 ---
-
+<img src="/pictures/creo-head.png" style="float: left; margin-right: 20px;margin-bottom: 10px;"> 
 As I conclude my mission as CEO of **Creodynamics** (August 2020 – December 2022), I look back on a period defined by intense transformation. Taking the helm of this Linköping-based center of excellence during the height of the global pandemic was a challenge that required not just management, but a complete strategic reimagining of how high-level physics expertise fits into the modern industrial world.
 
+
 My mandate was clear, though complex: take a company renowned for its niche R&D brilliance and **scale it up** to meet the rigorous demands of global markets.
+
+{{< figure src="/pictures/creo-f1.png" title="Efficient large scale CFD simulations (HPC)" caption="Working with a leading Formula One team Faurecia Creo has developed efficient and accurate simulation strategies for large scale CFD on complex configurations." >}}
+
 
 ## The Imperative to Scale Up
 
@@ -40,3 +46,5 @@ We didn't just model the sound; we developed the software algorithms and hardwar
 Leading a Swedish high-tech entity as a French executive within a global group presented its own set of cultural and operational challenges. It required navigating the consensus-driven, highly innovative Swedish business culture while driving the aggressive targets of a global industrial group.
 
 I am incredibly proud of the team at Creodynamics. Together, we proved that you can respect the deep roots of scientific research while aggressively pursuing industrial growth. We leave the company not just larger, but fundamentally stronger—ready to define the sound of the future.
+
+{{< figure src="/pictures/creo_las_vegas.jpg" title="Creao Dynamics @CES Las Vegas" caption="From left to Right: Jean-François Rondeau, Magnus Titus, Christophe Mattei" >}}
