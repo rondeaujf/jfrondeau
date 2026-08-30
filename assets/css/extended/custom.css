@@ -141,24 +141,16 @@
     position: relative;
 }
 
-.nav-dropdown-toggle {
-    display: inline-flex;
+/* Le déclencheur est un <a> : il hérite tel quel du style des autres
+   entrées du menu (.nav a, #menu a) ; on ajoute juste le chevron. */
+#menu .nav-dropdown-toggle {
+    display: flex;
     align-items: center;
-    gap: 4px;
-    margin: auto;
-    padding: 0;
-    font: inherit;
-    color: inherit;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.nav-dropdown-toggle:hover span {
-    opacity: 0.8;
+    gap: 3px;
 }
 
 .nav-dropdown-caret {
+    flex: none;
     transition: transform 0.2s ease;
 }
 
@@ -168,21 +160,22 @@
     transform: rotate(180deg);
 }
 
+/* Panneau déroulant : compact, texte aligné à gauche */
 .nav-dropdown-menu {
     position: absolute;
     top: 100%;
     right: 0;
-    left: auto;
+    z-index: 100;
     display: none;
-    min-width: 200px;
+    min-width: 160px;
     margin: 0;
-    padding: 6px 0;
+    padding: 4px 0;
     list-style: none;
+    line-height: normal;
     background: var(--theme);
     border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-    z-index: 100;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
 }
 
 .nav-dropdown:hover .nav-dropdown-menu,
@@ -191,20 +184,31 @@
     display: block;
 }
 
-.nav-dropdown-menu li {
+#menu .nav-dropdown-menu li,
+#menu .nav-dropdown-menu li + li {
     margin: 0;
 }
 
-.nav-dropdown-menu li a {
+#menu .nav-dropdown-menu a {
     display: flex;
     align-items: center;
-    padding: 8px 16px;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 6px 14px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
     white-space: nowrap;
     color: var(--primary);
 }
 
-.nav-dropdown-menu li a:hover {
+#menu .nav-dropdown-menu a:hover {
     background: var(--tertiary);
+}
+
+.nav-dropdown-menu .nav-external-icon {
+    flex: none;
+    opacity: 0.6;
 }
 
 /* PaperMod met overflow-x:auto sur #menu (scroll horizontal mobile),

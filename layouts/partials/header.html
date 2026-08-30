@@ -89,27 +89,25 @@
             {{- with (and .KeyName (site.GetPage .KeyName)) }}{{ $is_search = eq .Layout `search` }}{{- end }}
             {{- if .HasChildren }}
             <li class="nav-dropdown">
-                <button type="button" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                <a href="#" class="nav-dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     <span>{{- .Pre }}{{- .Name -}}{{ .Post -}}</span>
-                    <svg class="nav-dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    <svg class="nav-dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M6 9l6 6 6-6"></path>
                     </svg>
-                </button>
+                </a>
                 <ul class="nav-dropdown-menu">
                     {{- range .Children }}
                     {{- $child_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
                     <li>
-                        <a href="{{ .URL | absLangURL }}"
-                            {{- if .Params.newtab }} target="_blank" rel="noopener noreferrer"{{ end }}
-                            title="{{ .Title | default .Name }}">
+                        <a href="{{ .URL | absLangURL }}"{{- if .Params.newtab }} target="_blank" rel="noopener noreferrer"{{ end }} title="{{ .Title | default .Name }}">
                             <span {{- if eq $child_url $page_url }} class="active" {{- end }}>
                                 {{- .Pre }}{{- .Name -}}{{ .Post -}}
                             </span>
-                            {{- if (findRE "://" .URL) }}&nbsp;
-                            <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                            {{- if (findRE "://" .URL) }}
+                            <svg class="nav-external-icon" fill="none" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="11" width="11">
                                 <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
                                 <path d="M15 3h6v6"></path>
                                 <path d="M10 14L21 3"></path>
@@ -152,6 +150,7 @@
             var toggle = dd.querySelector(".nav-dropdown-toggle");
             if (!toggle) return;
             toggle.addEventListener("click", function (e) {
+                e.preventDefault();
                 e.stopPropagation();
                 var open = dd.classList.toggle("open");
                 toggle.setAttribute("aria-expanded", open ? "true" : "false");
