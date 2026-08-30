@@ -134,6 +134,88 @@
 .thumbnail-clickable-img[src*="/light/"] {
     display: block;
 }
+/* ---------------------------------------------------------------------------
+   Menu déroulant de la barre de navigation (onglet "Projects")
+   --------------------------------------------------------------------------- */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin: auto;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-dropdown-toggle:hover span {
+    opacity: 0.8;
+}
+
+.nav-dropdown-caret {
+    transition: transform 0.2s ease;
+}
+
+.nav-dropdown:hover .nav-dropdown-caret,
+.nav-dropdown:focus-within .nav-dropdown-caret,
+.nav-dropdown.open .nav-dropdown-caret {
+    transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    display: none;
+    min-width: 200px;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    z-index: 100;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
+    display: block;
+}
+
+.nav-dropdown-menu li {
+    margin: 0;
+}
+
+.nav-dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    white-space: nowrap;
+    color: var(--primary);
+}
+
+.nav-dropdown-menu li a:hover {
+    background: var(--tertiary);
+}
+
+/* PaperMod met overflow-x:auto sur #menu (scroll horizontal mobile),
+   ce qui rognerait le menu déroulant : on rétablit overflow visible
+   uniquement quand un menu est ouvert / survolé. */
+#menu:has(.nav-dropdown.open),
+#menu:has(.nav-dropdown:hover),
+#menu:has(.nav-dropdown:focus-within) {
+    overflow: visible;
+}
+
 /* Par défaut (Mode Sombre) */
 .image-switch .light-img {
     display: block;

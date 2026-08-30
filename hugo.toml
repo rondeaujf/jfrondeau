@@ -86,3 +86,24 @@ theme = 'PaperMod'
   name = "Contact"
   url = "/contact/"
   weight = 4
+
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  weight = 5
+
+[[menu.main]]
+  identifier = "projects-ltn"
+  parent = "projects"
+  name = "LTN"
+  url = "https://letableaunoir.fr"
+  weight = 1
+  [menu.main.params]
+    newtab = true
+
+[[menu.main]]
+  identifier = "projects-classroom-layout"
+  parent = "projects"
+  name = "Classroom Layout"
+  url = "/projects/classroom-layout/"
+  weight = 2
