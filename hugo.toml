@@ -107,3 +107,10 @@ theme = 'PaperMod'
   name = "Classroom Layout"
   url = "/projects/classroom-layout/"
   weight = 2
+
+[[menu.main]]
+  identifier = "projects-school-workshop-assigner"
+  parent = "projects"
+  name = "School Workshop Assigner"
+  url = "/projects/school-workshop-assigner/"
+  weight = 3
