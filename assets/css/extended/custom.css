@@ -352,3 +352,298 @@
 [data-theme="dark"] .image-switch .dark-img {
     display: block;
 }
+
+/* ---------------------------------------------------------------------------
+   Démo « school-workshop-assigner » (content/projects/school-workshop-assigner.md)
+   Même parti pris que la démo Classroom Layout : la démo déborde de la colonne
+   de texte, config à GAUCHE, résultat à DROITE. HiGHS (WASM) tourne dans un
+   Web Worker créé au lancement d'un calcul puis terminé aussitôt (cf. la note
+   « RAM » dans la page).
+   --------------------------------------------------------------------------- */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.swa-demo {
+    margin: 1.5rem 0;
+}
+.swa-demo-status {
+    margin: 0.75rem 0 0;
+    min-height: 1.2em;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+.swa-demo-status.swa-demo-error {
+    color: #d64545;
+    white-space: pre-wrap;
+}
+
+.swa-demo-breakout {
+    --demo-w: min(200%, calc(100vw - 2rem));
+    width: var(--demo-w);
+    margin-left: calc((100% - var(--demo-w)) / 2);
+}
+.swa-demo-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 1.25rem;
+    align-items: start;
+    margin-top: 1rem;
+}
+.swa-demo-config {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    min-width: 0;
+}
+.swa-demo-stage {
+    min-height: 460px;
+    padding: 1rem;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: auto;
+}
+
+/* Sources : bouton « exemple » + imports CSV */
+.swa-demo-sources {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+.swa-demo-sources h4 {
+    margin: 0 0 0.2rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+.swa-demo-file {
+    display: block;
+    font-size: 0.85rem;
+}
+.swa-demo-file span {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: var(--secondary);
+}
+.swa-demo-file input {
+    width: 100%;
+    font-size: 0.8rem;
+}
+.swa-demo-loaded {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+}
+.swa-demo-loaded li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.swa-demo-loaded button {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+/* Panneau JSON repliable */
+.swa-demo-params-toggle {
+    align-self: flex-start;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+}
+.swa-demo-params-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 0.6rem;
+}
+.swa-demo-params-body[hidden] {
+    display: none;
+}
+.swa-demo-field > label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+.swa-demo-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+}
+
+/* Éditeur JSON — variante à base de classes (le bloc plus haut est câblé sur
+   les ID de la démo Classroom Layout, qui n'a qu'un seul éditeur). */
+.swa-demo .json-editor {
+    position: relative;
+    height: var(--swa-editor-h, 220px);
+    overflow: hidden;
+    background: var(--code-block-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    resize: vertical;
+}
+.swa-demo .json-editor:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px var(--tertiary);
+}
+.swa-demo .json-editor__hl,
+.swa-demo .json-editor textarea {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 12px 14px;
+    border: 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 12.5px;
+    line-height: 1.5;
+    tab-size: 2;
+    white-space: pre;
+    overflow: auto;
+}
+.swa-demo .json-editor__hl {
+    pointer-events: none;
+    color: #d5d5d6;
+    background: transparent;
+}
+.swa-demo .json-editor__hl code {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    font: inherit;
+    line-height: inherit;
+    white-space: inherit;
+    word-break: normal;
+    color: #d5d5d6;
+    background: transparent !important;
+    overflow: visible;
+}
+.swa-demo .json-editor textarea {
+    color: transparent;
+    background: transparent;
+    caret-color: #d5d5d6;
+    resize: none;
+    outline: none;
+}
+.swa-demo .json-editor textarea::selection {
+    color: transparent;
+    background: rgba(120, 150, 255, 0.35);
+}
+
+.swa-demo-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+.swa-demo-actions .btn {
+    padding: 0.35rem 1rem;
+    font-size: 0.9rem;
+}
+.swa-demo-note {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--secondary);
+}
+
+/* Rendu du résultat (scène de droite) */
+.swa-result h4 {
+    margin: 1.1em 0 0.3em;
+}
+.swa-result-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+.swa-result-exports {
+    margin-left: auto;
+}
+.swa-result-exports button {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+}
+.swa-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #fff;
+}
+.swa-badge.status-OPTIMAL,
+.swa-badge.status-FEASIBLE {
+    background: #15803d;
+}
+.swa-badge.status-FEASIBLE_WITH_CONFLICTS,
+.swa-badge.status-NEEDS_CONFIRMATION,
+.swa-badge.status-TIMED_OUT {
+    background: #b45309;
+}
+.swa-badge.status-INFEASIBLE,
+.swa-badge.status-ERROR {
+    background: #b91c1c;
+}
+.swa-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin: 0.4rem 0 1rem;
+}
+.swa-table th,
+.swa-table td {
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    padding: 0.3rem 0.45rem;
+}
+.swa-table .rank-null {
+    color: #b91c1c;
+    font-weight: 600;
+}
+.swa-warnings {
+    font-size: 0.82rem;
+    color: #b45309;
+}
+.swa-conflicts {
+    font-size: 0.82rem;
+    color: #b91c1c;
+}
+.swa-hint {
+    color: var(--secondary);
+    font-style: italic;
+}
+.swa-result details pre {
+    font-size: 0.75rem;
+}
+
+@media (max-width: 960px) {
+    .swa-demo-breakout {
+        --demo-w: 100%;
+        margin-left: 0;
+    }
+    .swa-demo-grid {
+        grid-template-columns: 1fr;
+    }
+}
