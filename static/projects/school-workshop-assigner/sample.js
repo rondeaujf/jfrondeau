@@ -1,33 +1,33 @@
 // Sample roster for the school-workshop-assigner live demo on jfrondeau.fr.
 //
-// Two "classes" — the 29 attendees of the 1927 Solvay Conference plus a few
-// organisers, and France's 1998 football World Cup-winning squad — 8 workshops,
-// seeded pseudo-random choices, and a deliberately dense set of exclusions
-// (every pair of people whose family name shares its first letter). This is the
-// exact fixture used by the "Classificateur" screen inside Le Tableau Noir,
-// pre-converted from the module's demo CSV files (the module never parses CSV
-// itself — see its README "Input contract").
+// The 29 people in the 5th Solvay Conference photograph (October 1927, class
+// "Solvay 1927") and France's 22-man 1998 football World Cup-winning squad —
+// 8 workshops, reproducible seeded pseudo-random choices (seed 1927), and 101
+// exclusions (every pair of people whose family name shares its first letter).
+// This is the exact fixture used by the "Classificateur" screen in Le Tableau
+// Noir; the module never parses CSV itself (see its README "Input contract"),
+// so the objects are provided ready to pass to assignStudentsToWorkshops().
 
 export const SAMPLE_WORKSHOPS = [
   {
     "name": "Football",
-    "maxCapacity": "8"
-  },
-  {
-    "name": "Juggling",
     "maxCapacity": "9"
   },
   {
+    "name": "Juggling",
+    "maxCapacity": "10"
+  },
+  {
     "name": "Fluid Mechanics",
-    "maxCapacity": "13"
+    "maxCapacity": "14"
   },
   {
     "name": "Field Theory",
-    "maxCapacity": "8"
+    "maxCapacity": "9"
   },
   {
     "name": "Organic Chemistry",
-    "maxCapacity": "4"
+    "maxCapacity": "5"
   },
   {
     "name": "Sliding Tackles",
