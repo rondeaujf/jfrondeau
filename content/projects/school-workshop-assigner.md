@@ -70,15 +70,16 @@ unknown student — comes back as a non-blocking `warnings` entry.
 
 ## Live demo
 
-This demo loads `school-workshop-assigner@0.3.1` — the current npm release —
-and the HiGHS WebAssembly binary straight from the jsDelivr CDN. On the left,
-the input: the built-in **Solvay 1927 / France 98** roster (or your own CSV
-files); on the right, the assignment the solver returns. The roster is the
-1927 [Solvay Conference](https://en.wikipedia.org/wiki/Fifth_Solvay_Conference)
-attendees plus France's 1998 football World Cup squad — two "classes", 8
-workshops, seeded pseudo-random choices, and a deliberately dense set of
-exclusions (every pair of people whose family name shares its first letter), so
-the `NEEDS_CONFIRMATION` → confirm flow actually triggers.
+This demo runs `school-workshop-assigner` **bundled and served from this site** —
+the solver, the HiGHS WebAssembly glue and the `.wasm` binary are all
+same-origin static files, no CDN and no build step at request time. On the
+left, the input: the built-in **Solvay 1927 / France 98** roster (or your own
+CSV files); on the right, the assignment the solver returns. The roster is the
+29 people in the 1927 [Solvay Conference](https://en.wikipedia.org/wiki/Fifth_Solvay_Conference)
+photograph plus France's 22-man 1998 football World Cup squad — two "classes",
+8 workshops, reproducible seeded choices (seed 1927), and a deliberately dense
+set of exclusions (every pair of people whose family name shares its first
+letter), so the `NEEDS_CONFIRMATION` → confirm flow actually triggers.
 
 > **On memory.** HiGHS is ~3.4&nbsp;MB of WebAssembly. It is **never** in the
 > initial page, **never** on the main thread, and **never** kept alive between
@@ -167,11 +168,17 @@ the `NEEDS_CONFIRMATION` → confirm flow actually triggers.
 </div>
 
 <script type="module">
-  const VERSION = "0.3.1";
-  const HIGHS_VERSION = "1.15.2";
-  const MODULE_URL = `https://cdn.jsdelivr.net/npm/school-workshop-assigner@${VERSION}/dist/index.js/+esm`;
-  const WORKER_CLIENT_URL = `https://cdn.jsdelivr.net/npm/school-workshop-assigner@${VERSION}/dist/worker-client.js/+esm`;
-  const WASM_URL = `https://cdn.jsdelivr.net/npm/highs@${HIGHS_VERSION}/build/highs.wasm`;
+  // All same-origin static assets (static/projects/school-workshop-assigner/).
+  // vendor/worker.js is school-workshop-assigner@0.3.1 + the HiGHS WASM glue,
+  // bundled with esbuild; it loads vendor/highs.wasm sitting next to it.
+  // Rebuild (from a checkout of the package, after `npm ci && npm run build`,
+  // with an entry that imports assignStudentsToWorkshops from ./dist/index.js
+  // and wires self.onmessage — the {id, payload:{input, options}} envelope
+  // below — plus a locateFile of (p) => new URL(p, self.location.href).href):
+  //   esbuild <entry> --bundle --format=iife --platform=browser --target=es2020 \
+  //     --minify --external:node:* --external:fs --external:path \
+  //     --external:crypto --external:url --external:module
+  const WORKER_URL = "/projects/school-workshop-assigner/vendor/worker.js";
   const SAMPLE_URL = "/projects/school-workshop-assigner/sample.js";
   const TIME_LIMIT_SECONDS = 15;
 
@@ -469,39 +476,50 @@ the `NEEDS_CONFIRMATION` → confirm flow actually triggers.
     statusEl.className = "swa-demo-status" + (isError ? " swa-demo-error" : "");
   }
 
-  // --- Web Worker: created per run, terminated in `finally` ------------
-  // A module Worker whose top-level script is a same-origin blob that just
-  // imports the CDN build — so `new Worker()` never faces a cross-origin
-  // script URL, and `locateFile` (a function, not structured-cloneable) is
-  // baked in here rather than passed through postMessage.
-  const WORKER_SRC = `
-    import { assignStudentsToWorkshops } from ${JSON.stringify(MODULE_URL)};
-    const WASM_URL = ${JSON.stringify(WASM_URL)};
-    self.onmessage = async (e) => {
-      const msg = e.data;
-      if (!msg || typeof msg !== "object" || !("id" in msg) || !msg.payload) return;
-      try {
-        const result = await assignStudentsToWorkshops(msg.payload.input, {
-          ...msg.payload.options,
-          locateFile: (f) => (f && f.endsWith(".wasm") ? WASM_URL : f),
-        });
-        self.postMessage({ id: msg.id, ok: true, result });
-      } catch (err) {
-        const out = { name: err && err.name, message: err && err.message };
-        if (err && err.code) out.code = err.code;
-        if (err && err.details) out.details = err.details;
-        self.postMessage({ id: msg.id, ok: false, error: out });
-      }
-    };
-  `;
-
-  let createAssigner = null;
+  // --- Web Worker: one per run, terminated in `finally` --------------
+  // vendor/worker.js is a plain (classic) same-origin bundle — no import
+  // map, no cross-origin script, no blob. Minimal request/response
+  // correlation over postMessage; a rejected call carries the worker-side
+  // error's name/code/details so renderError() can tell a CoherenceError
+  // from a solver failure.
   let activeAssigner = null;
   let running = false;
 
-  async function ensureWorkerClient() {
-    if (!createAssigner) ({ createAssigner } = await import(WORKER_CLIENT_URL));
+  function makeAssigner(worker) {
+    let nextId = 0;
+    const pending = new Map();
+    worker.addEventListener("message", (e) => {
+      const m = e.data;
+      if (!m || typeof m.id !== "number") return;
+      const entry = pending.get(m.id);
+      if (!entry) return;
+      pending.delete(m.id);
+      if (m.ok) {
+        entry.resolve(m.result);
+      } else {
+        const err = new Error(m.error?.message || "Worker error");
+        err.name = m.error?.name || "Error";
+        if (m.error?.code) err.code = m.error.code;
+        if (m.error?.details) err.details = m.error.details;
+        entry.reject(err);
+      }
+    });
+    return {
+      assign: (input, options) =>
+        new Promise((resolve, reject) => {
+          const id = nextId++;
+          pending.set(id, { resolve, reject });
+          worker.postMessage({ id, payload: { input, options } });
+        }),
+      terminate() {
+        worker.terminate();
+        for (const e of pending.values())
+          e.reject(new Error("Worker terminated before the assignment completed."));
+        pending.clear();
+      },
+    };
   }
+
   function releaseWorker() {
     try { activeAssigner?.terminate(); } catch (e) { /* ignore */ }
     activeAssigner = null;
@@ -528,11 +546,7 @@ the `NEEDS_CONFIRMATION` → confirm flow actually triggers.
     sampleBtn.disabled = true;
     setStatus("Solving in a Web Worker… (a dense roster like this one can take 10–30 s)", false);
     try {
-      await ensureWorkerClient();
-      const blobUrl = URL.createObjectURL(new Blob([WORKER_SRC], { type: "text/javascript" }));
-      const worker = new Worker(blobUrl, { type: "module" });
-      URL.revokeObjectURL(blobUrl);
-      activeAssigner = createAssigner(worker);
+      activeAssigner = makeAssigner(new Worker(WORKER_URL));
       const result = await activeAssigner.assign(input, { timeLimitSeconds: TIME_LIMIT_SECONDS });
       setStatus("", false);
       renderResult(result, () =>
