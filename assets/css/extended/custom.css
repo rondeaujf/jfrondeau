@@ -917,3 +917,120 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ---------------------------------------------------------------------------
+   Projects dropdown icons + homepage project tiles
+   The three module icons are the white silhouettes from letableaunoir,
+   tinted with currentColor / --primary via CSS mask so they follow the
+   theme. LTN keeps its round two-tone launcher mark as a plain <img>.
+   --------------------------------------------------------------------------- */
+.nav-dropdown-menu .nav-menu-icon {
+    display: inline-block;
+    width: 1.05em;
+    height: 1.05em;
+    margin-right: 0.5em;
+    vertical-align: -0.18em;
+    background-color: currentColor;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
+}
+.nav-dropdown-menu .nav-menu-icon--img {
+    background: none;
+    -webkit-mask: none;
+    mask: none;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.nav-menu-icon--classroom { --icon: url("/projects/icons/classroom.png"); }
+.nav-menu-icon--classifier { --icon: url("/projects/icons/classifier.png"); }
+.nav-menu-icon--labels { --icon: url("/projects/icons/labels.png"); }
+
+/* Homepage hero: kill PaperMod's full-viewport centring so the roller sits
+   right under the nav and "Download CV" isn't a screen away from the content. */
+.main .profile {
+    min-height: auto;
+    padding: 1.25rem 0 1.75rem;
+}
+.profile .profile_inner {
+    width: 100%;
+}
+
+/* Project roller (layouts/partials/home_tiles.html): one centred band, the
+   width of the page content, that auto-scrolls and wraps around. Native
+   horizontal scroll (wheel / drag), scrollbar hidden; JS advances it and
+   jumps by one set width to loop. Hover pauses the auto-scroll. */
+.home-roller {
+    width: 100%;
+    margin: 0 auto 1.25rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+    -webkit-mask: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+    mask: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+}
+.home-roller::-webkit-scrollbar {
+    display: none;
+}
+.home-roller.is-dragging {
+    cursor: grabbing;
+}
+.home-roller__track {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    padding: 8px 0;
+}
+@media (prefers-reduced-motion: reduce) {
+    .home-roller {
+        -webkit-mask: none;
+        mask: none;
+    }
+}
+
+.home-tile {
+    flex: 0 0 clamp(180px, 38vw, 224px);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.85rem 1rem;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+    box-shadow: none;
+    user-select: none;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.home-tile:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+}
+.home-tile__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--primary);
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
+}
+.home-tile__icon--img {
+    background: none;
+    -webkit-mask: none;
+    mask: none;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.home-tile__title {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+.home-tile__desc {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--secondary);
+}

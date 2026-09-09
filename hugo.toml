@@ -98,6 +98,7 @@ theme = 'PaperMod'
   name = "LTN"
   url = "https://letableaunoir.fr"
   weight = 1
+  pre = "<img class='nav-menu-icon nav-menu-icon--img' src='/projects/icons/ltn.png' alt='' loading='lazy'>"
   [menu.main.params]
     newtab = true
 
@@ -107,6 +108,7 @@ theme = 'PaperMod'
   name = "Classroom Layout"
   url = "/projects/classroom-layout/"
   weight = 2
+  pre = "<span class='nav-menu-icon nav-menu-icon--classroom'></span>"
 
 [[menu.main]]
   identifier = "projects-school-workshop-assigner"
@@ -114,6 +116,7 @@ theme = 'PaperMod'
   name = "School Workshop Assigner"
   url = "/projects/school-workshop-assigner/"
   weight = 3
+  pre = "<span class='nav-menu-icon nav-menu-icon--classifier'></span>"
 
 [[menu.main]]
   identifier = "projects-print-labels"
@@ -121,3 +124,4 @@ theme = 'PaperMod'
   name = "Print Labels"
   url = "/projects/print-labels/"
   weight = 4
+  pre = "<span class='nav-menu-icon nav-menu-icon--labels'></span>"

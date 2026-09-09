@@ -1,6 +1,7 @@
 <div class="profile">
     {{- with .Site.Params.profileMode }}
     <div class="profile_inner">
+        {{- partial "home_tiles.html" $ }}
         {{- if .imageUrl -}}
         {{- $img := "" }}
         {{- if not (urls.Parse .imageUrl).IsAbs }}

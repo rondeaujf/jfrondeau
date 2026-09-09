@@ -1,0 +1,123 @@
+{{- /* Homepage project roller: Le Tableau Noir + the three published modules.
+     One centred horizontal band, the width of the page content, that
+     auto-scrolls and wraps around. Hover pauses the auto-scroll; the mouse
+     wheel and a click-drag scrub it by hand. The four tiles are rendered
+     three times so the wrap (jump by one set width) is always seamless.
+     Styles: assets/css/extended/custom.css (.home-roller*). */ -}}
+{{- $tiles := slice
+  (dict "href" "https://letableaunoir.fr" "ext" true  "img" true  "cls" "" "title" "Le Tableau Noir" "desc" "The teacher planner these modules were built for.")
+  (dict "href" "/projects/classroom-layout/" "ext" false "img" false "cls" "classroom"  "title" "Classroom Layout" "desc" "Interactive seating chart: drag-and-drop, zoom, print / PDF.")
+  (dict "href" "/projects/school-workshop-assigner/" "ext" false "img" false "cls" "classifier" "title" "School Workshop Assigner" "desc" "Fair capacity- and exclusion-aware workshop assignment, client-side.")
+  (dict "href" "/projects/print-labels/" "ext" false "img" false "cls" "labels" "title" "Print Labels" "desc" "Printable A4 grid of student name labels, per-label font fitting.")
+-}}
+<div class="home-roller" aria-label="Live projects">
+  <div class="home-roller__track">
+    {{- range $set := (seq 3) }}
+    {{- range $tiles }}
+    <a class="home-tile" href="{{ .href }}" draggable="false"
+       {{- if .ext }} target="_blank" rel="noopener noreferrer"{{ end }}
+       {{- if gt $set 1 }} aria-hidden="true" tabindex="-1"{{ end }}>
+      {{- if .img }}
+      <img class="home-tile__icon home-tile__icon--img" src="/projects/icons/ltn.png" alt="" draggable="false" loading="lazy">
+      {{- else }}
+      <span class="home-tile__icon" style="--icon: url('/projects/icons/{{ .cls }}.png')"></span>
+      {{- end }}
+      <span class="home-tile__title">{{ .title }}</span>
+      <span class="home-tile__desc">{{ .desc }}</span>
+    </a>
+    {{- end }}
+    {{- end }}
+  </div>
+</div>
+<script>
+  (function () {
+    var roller = document.querySelector(".home-roller");
+    if (!roller) return;
+    var track = roller.firstElementChild;
+    var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var perSet = Math.round(track.children.length / 3);
+
+    function setWidth() {
+      var kids = track.children, w = 0;
+      for (var i = 0; i < perSet; i++) w += kids[i].getBoundingClientRect().width;
+      var cs = getComputedStyle(track);
+      var gap = parseFloat(cs.columnGap) || parseFloat(cs.gap) || 16;
+      return w + perSet * gap;
+    }
+
+    var SETW = setWidth();
+    // `pos` is the source of truth: scrollLeft snaps to integers in some
+    // browsers, so accumulating +0.6 straight onto it never advances.
+    var pos = SETW;
+    roller.scrollLeft = pos;
+
+    function norm() {
+      if (pos >= 2 * SETW) pos -= SETW;
+      else if (pos < SETW) pos += SETW;
+    }
+
+    var paused = false, dragging = false;
+
+    function frame() {
+      if (!reduce && !paused && !dragging) {
+        pos += 0.6;
+        norm();
+        roller.scrollLeft = pos;
+      }
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+
+    roller.addEventListener("mouseenter", function () { paused = true; });
+    roller.addEventListener("mouseleave", function () { paused = false; });
+
+    roller.addEventListener("wheel", function (e) {
+      var d = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+      if (!d) return;
+      e.preventDefault();
+      pos = roller.scrollLeft + d;
+      norm();
+      roller.scrollLeft = pos;
+    }, { passive: false });
+
+    // Click-drag to scrub. No pointer capture — capturing the pointer makes
+    // some browsers retarget the follow-up click to the roller <div>, which
+    // is exactly why the tile links stopped working.
+    var startX = 0, startPos = 0, moved = false, onMove, onUp;
+    roller.addEventListener("pointerdown", function (e) {
+      if (e.button !== 0) return;
+      dragging = true;
+      moved = false;
+      startX = e.clientX;
+      startPos = roller.scrollLeft;
+      roller.classList.add("is-dragging");
+      onMove = function (ev) {
+        var dx = ev.clientX - startX;
+        if (Math.abs(dx) > 4) moved = true;
+        pos = startPos - dx;
+        norm();
+        roller.scrollLeft = pos;
+      };
+      onUp = function () {
+        dragging = false;
+        pos = roller.scrollLeft;
+        roller.classList.remove("is-dragging");
+        window.removeEventListener("pointermove", onMove);
+        window.removeEventListener("pointerup", onUp);
+        window.removeEventListener("pointercancel", onUp);
+      };
+      window.addEventListener("pointermove", onMove);
+      window.addEventListener("pointerup", onUp);
+      window.addEventListener("pointercancel", onUp);
+    });
+    roller.addEventListener("click", function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+    }, true);
+
+    window.addEventListener("resize", function () {
+      SETW = setWidth();
+      norm();
+      roller.scrollLeft = pos;
+    });
+  })();
+</script>
