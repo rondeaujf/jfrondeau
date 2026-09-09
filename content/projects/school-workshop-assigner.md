@@ -312,8 +312,13 @@ letter), so the `NEEDS_CONFIRMATION` → confirm flow actually triggers.
 
   function assignmentToCsv(byClassroom) {
     const q = (v) => {
-      const s = String(v ?? "");
-      return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+      let s = String(v ?? "");
+      // Anti formula-injection: a spreadsheet reads a cell starting with
+      // = + - @ (or tab / CR) as a formula. A student name pasted from an
+      // imported CSV could carry =IMPORTXML(...) / =HYPERLINK(...); prefix it
+      // with an apostrophe (invisible, forces text). Then RFC 4180 quoting.
+      if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
+      return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
     };
     const lines = ["className,lastName,firstName,workshopName,satisfiedChoiceRank"];
     for (const [className, entries] of Object.entries(byClassroom)) {
