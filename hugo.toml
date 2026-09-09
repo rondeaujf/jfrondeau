@@ -114,3 +114,10 @@ theme = 'PaperMod'
   name = "School Workshop Assigner"
   url = "/projects/school-workshop-assigner/"
   weight = 3
+
+[[menu.main]]
+  identifier = "projects-print-labels"
+  parent = "projects"
+  name = "Print Labels"
+  url = "/projects/print-labels/"
+  weight = 4
